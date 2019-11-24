@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function TechItem({ tech, onDelete }) {
+function ToDoItem({ task, onDelete }) {
   return (
   <li>
-  {tech}
+  {task}
   <button onClick={onDelete} type="button">Delete</button>
   </li>
   )
 }
 
-TechItem.defaultProps = {
-  tech: 'Blank',
+ToDoItem.defaultProps = {
+  task: 'Blank',
 };
 
-TechItem.propTypes = {
-  tech: PropTypes.string,
+ToDoItem.propTypes = {
+  task: PropTypes.string,
   onDelete: PropTypes.func.isRequired,
 };
 
-export default TechItem;
+export default ToDoItem;

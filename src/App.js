@@ -1,10 +1,16 @@
 import React from 'react';
-import './App.css';
 
-import Techlist from './components/Techlist';
+import GlobalStyle from './styles/global';
+
+import ToDoList from './components/ToDoList';
 
 function App() {
-  return <Techlist />
+  return (
+  <>
+    <GlobalStyle />
+    <ToDoList />
+  </>
+  );
 }
 
 export default App;
