@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 
+import Techlist from './components/Techlist';
+
 function App() {
-  return <h1>Hello Rocketseat</h1>
+  return <Techlist />
 }
 
 export default App;
