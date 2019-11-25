@@ -36,8 +36,10 @@ class ToDoList extends Component {
     });
   }
 
-  handleDelete = (task) => {
-    this.setState({ tasks: this.state.tasks.filter(t => t !== task) })
+  handleDelete = (indextask) => {
+    const taskIndex = [... this.state.tasks];
+    taskIndex.splice(indextask, 1);
+    this.setState({ tasks: taskIndex });
   }
 
   render() {
@@ -49,11 +51,11 @@ class ToDoList extends Component {
       </h1>
       <Form onSubmit = {this.handleSubmit}>
         <ul>
-          {this.state.tasks.map(task => (
+          {this.state.tasks.map((task, index) => (
             <ToDoItem 
-              key={task} 
+              key={index} 
               task={task} 
-              onDelete={() => this.handleDelete(task)}
+              onDelete={() => this.handleDelete(index)}
             />
           ))}
         </ul>
