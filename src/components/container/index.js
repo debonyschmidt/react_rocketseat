@@ -28,18 +28,6 @@ export const Form = styled.form`
     overflow:auto;
   }
 
-  li {
-    display: block;
-    position: relative;
-    padding: 5px;
-    border: 1px solid rgb(233, 231, 231);
-    border-radius: 4px;
-    height: 30px;
-    outline: none;
-    margin: 3px;
-    color: grey;
-  }
-
   input {
     height: 50px;
     font-size: 16px;

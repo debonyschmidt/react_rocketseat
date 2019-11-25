@@ -1,12 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { GoTrashcan }  from 'react-icons/go';
+
+import { Item, DeleteButton } from './styles';
 
 function ToDoItem({ task, onDelete }) {
   return (
-  <li>
+  <Item>
   {task}
-  <button onClick={onDelete} type="button">Delete</button>
-  </li>
+  <DeleteButton 
+    onClick={onDelete} 
+    type="button">
+    <GoTrashcan />
+  </DeleteButton>
+  
+  </Item>
   )
 }
 
