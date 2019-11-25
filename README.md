@@ -2,6 +2,10 @@
 A ReactJS project to use as To Do list.
 Phase 1
 
+Features
+* Add Task
+* Delete Task
+
 Dependecies
 * Yarn
 * React
@@ -11,4 +15,4 @@ Run
 * npm install || yarn
 * npm run dev || yarn dev
 
-![Demo](demo.png)
+![Demo](demo.gif)
