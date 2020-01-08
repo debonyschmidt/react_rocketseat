@@ -6,7 +6,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "webpack --mode development",
     "dev": "webpack-dev-server --mode development"
